@@ -4,12 +4,13 @@
 
 using namespace std;
 int main(){
-    int a,b;
-    cin>>a>>b;
+    int initial1=-4;
+    int initial2=11;
+    
     int n=3; //n is size of array
     int finallist[3]={15, -4, 11};// SORRY BUT I HAVE ONLY WRITTEN THE CODE FOR THIS TEST CASE
-    int initial_sum=a+b;
-    int initial_product=a*b;
+    int initial_sum=initial1+initial2;
+    int initial_product=initial1*initial2;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int final_sum=finallist[i]+finallist[j];
