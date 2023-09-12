@@ -24,9 +24,9 @@ int main(){
 
 
     // CASE 2
-    // if whole final list is of positive numbers that means one of them should be 
-    //the greatest number because we are taking difference of numbers that means greates numbers
-    //should have been a initial number
+    //If the whole final list is of positive numbers that means one of them should be 
+    //the greatest number because we are taking the difference of numbers that means the greatest numbers
+    //should have been an initial number
     int greatest=-1;
     for(int i=0;i<n;i++){
         if(finallist[i]>greatest)greatest=finallist[i];
