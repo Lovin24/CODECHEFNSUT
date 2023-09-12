@@ -1,24 +1,36 @@
-
-
+//NOT SURE IF THIS WILL WORK ON MORE TEST CASES ○) would have though better if got more test cases
+//even this though was out of the blue ○)
 #include<iostream> 
 
 using namespace std;
 int main(){
-    int initial1=3;
-    int initial2=5;
     
-    int n=5; //n is size of array
-    int finallist[5]={3,1,1,2,5};// SORRY BUT I HAVE ONLY WRITTEN THE CODE FOR THIS TEST CASE
-    int initial_sum=initial1+initial2;
-    int initial_product=initial1*initial2;
+    int n=4; //n is size of array
+    int finallist[5]={3,5,2,1};// SORRY BUT I HAVE ONLY WRITTEN THE CODE FOR THIS TEST CASE
+    // LOGIC 
+    /*
+    CASE 1
+    Agr negative number hai to wo to answer hoega hi coz absolute difference le rhe hai 
+    to hmesha positive honge baaki numbers
+    
+    */
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            int final_sum=finallist[i]+finallist[j];
-            int final_product=finallist[i]*finallist[j];
-            if(final_sum==initial_sum && final_product==initial_product){ 
-                cout<<finallist[i]<<" "<<finallist[j];
-                return 0; //not iterate more elements
-            }
+        if(finallist[i]<0){
+            cout<<finallist[i];
+            return 0;
         }
+
     }
+
+
+    // CASE 2
+    // if whole final list is of positive numbers that means one of them should be 
+    //the greatest number because we are taking difference of numbers that means greates numbers
+    //should have been a initial number
+    int greatest=-1;
+    for(int i=0;i<n;i++){
+        if(finallist[i]>greatest)greatest=finallist[i];
+    }
+    cout<<greatest;
+
 }
